@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Validating data using Access Record Model forms</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>{{RFO.as_table}}</table>
+            <input type="submit" value="Valid Record">
+        </form>
+    </center>
+</body>
+</html>
